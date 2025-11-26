@@ -43,7 +43,7 @@ REPO="Discord-appimage"
 TAG="latest"
 UPINFO="gh-releases-zsync|$GITHUB_REPOSITORY_OWNER|$REPO|$TAG|*x86_64.AppImage.zsync"
 
-ARCH=x86_64 _appimagetool -u "$UPINFO" ./"$APP".AppDir "$APPNAME"_"$VERSION"-"$ARCHIMAGE_VERSION"-x86_64.AppImage
+ARCH=x86_64 _appimagetool -u "$UPINFO" ./"$APP".AppDir "$APPNAME"_"$VERSION"-x86_64.AppImage
 
 if ! test -f ./*.AppImage; then
 	echo "No AppImage available."; exit 1
