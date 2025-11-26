@@ -38,7 +38,13 @@ _appimage_basics() {
 _appimage_basics
 
 # CONVERT THE APPDIR TO AN APPIMAGE
-ARCH=x86_64 VERSION="$VERSION" _appimagetool -s ./"$APP".AppDir 2>&1
+APPNAME="Discord"
+REPO="Discord-appimage"
+TAG="latest"
+UPINFO="gh-releases-zsync|$GITHUB_REPOSITORY_OWNER|$REPO|$TAG|*x86_64.AppImage.zsync"
+
+ARCH=x86_64 _appimagetool -u "$UPINFO" ./"$APP".AppDir "$APPNAME"_"$VERSION"-"$ARCHIMAGE_VERSION"-x86_64.AppImage
+
 if ! test -f ./*.AppImage; then
 	echo "No AppImage available."; exit 1
 fi
