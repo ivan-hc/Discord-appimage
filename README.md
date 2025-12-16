@@ -20,6 +20,12 @@ I hope you can appreciate my work and my commitment to this project.
 
 ------------------------------------------------------------------------
 
+### As of December 16, 2025, this AppImage has been replaced in the "AM" package manager in favor of this one:
+
+### https://github.com/pkgforge-dev/Discord-appimage
+
+------------------------------------------------------------------------
+
 ## Install and update it with ease
 
 ### *"*AM*" Application Manager* 
